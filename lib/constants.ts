@@ -1,4 +1,4 @@
-export const PHONE = "917905651137";
+export const PHONE = "918957319386";
 export const ADDRESS = "65-H, near MAMA PCO, Mangala Vihar-1, Shyam Nagar, Kanpur, Uttar Pradesh 208015";
 export const MAPS_LINK = "https://www.google.com/maps/place/Sparsh+Physiotherapy+Clinic/@26.4142134,80.3125707,14z";
 export const WHATSAPP_LINK = `https://wa.me/${PHONE}?text=Hi%20Sparsh%20Clinic%2C%20I%20would%20like%20to%20book%20an%20appointment.`;

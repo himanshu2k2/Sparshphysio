@@ -5,18 +5,14 @@ import { Icon } from "@/components/shared/Icon";
 
 export default function Contact() {
 
-    const images = [
-        "one.jpg",
-        "two.png",
-    ];
     return (
-        <div className="bg-[#f8f6f1] min-h-screen">
+        <div className="bg-background min-h-screen">
             <section className="relative bg-gradient-to-br py-32 px-6 text-center overflow-hidden h-[500px]">
                 <div className="absolute inset-0">
-                    <ImageCarousel images={images} interval={3000} />
+                    <ImageCarousel  interval={3000} />
                 </div>
                 <div className="relative z-10 flex flex-col justify-center h-full animate-fade-in-down">
-                    <span className="font-['DM_Sans'] text-xs text-yellow-600 font-semibold tracking-widest uppercase">CONTACT US</span>
+                    <span className="font-['DM_Sans'] text-xs text-secondary font-semibold tracking-widest uppercase">CONTACT US</span>
                     <h1 className="font-['Playfair_Display'] text-[clamp(32px,5vw,48px)] text-white mt-3">Find Us & Reach Out</h1>
                 </div>
             </section>
@@ -31,15 +27,15 @@ export default function Contact() {
                             />
                         </div>
                         <div className="flex flex-col gap-5">
-                            <div className="group relative bg-white p-7 rounded-2xl shadow-sm overflow-hidden transition-all duration-500 hover:-translate-y-1 hover:shadow-2xl">
-                                <div className="absolute inset-0 right-full bg-gradient-to-r from-green-400 to-green-200 transition-all duration-500 ease-in-out group-hover:right-0"></div>
+                            <div className="group relative bg-card p-7 rounded-2xl shadow-sm overflow-hidden transition-all duration-500 hover:-translate-y-1 hover:shadow-2xl">
+                                <div className="absolute inset-0 right-full bg-gradient-to-r from-secondary to-primary/60 transition-all duration-500 ease-in-out group-hover:right-0"></div>
                                 <div className="relative z-10">
                                     <div className="flex gap-4 items-start">
-                                        <div className="bg-green-50 rounded-xl p-3 flex-shrink-0 text-green-900 transition-colors duration-500"><Icon name="mapPin" size={22} /></div>
+                                        <div className="bg-secondary/20 rounded-xl p-3 flex-shrink-0 text-primary transition-colors duration-500 group-hover:text-primary-foreground"><Icon name="mapPin" size={22} /></div>
                                         <div>
-                                            <h3 className="font-['DM_Sans'] text-base text-green-900 font-semibold mb-1.5 transition-colors duration-500">Address</h3>
-                                            <p className="font-['DM_Sans'] text-sm text-gray-600 leading-relaxed transition-colors duration-500">{ADDRESS}</p>
-                                            <a href={MAPS_LINK} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-1.5 mt-2.5 text-green-900 font-['DM_Sans'] text-sm font-semibold no-underline transition-colors duration-500"
+                                            <h3 className="font-['DM_Sans'] text-base text-primary font-semibold mb-1.5 transition-colors duration-500 group-hover:text-primary-foreground">Address</h3>
+                                            <p className="font-['DM_Sans'] text-sm text-muted-foreground leading-relaxed transition-colors duration-500 group-hover:text-primary-foreground/90">{ADDRESS}</p>
+                                            <a href={MAPS_LINK} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-1.5 mt-2.5 text-primary font-['DM_Sans'] text-sm font-semibold no-underline transition-colors duration-500 group-hover:text-primary-foreground"
                                             >
                                                 Get Directions <Icon name="arrowRight" size={14} />
                                             </a>
@@ -48,16 +44,16 @@ export default function Contact() {
                                 </div>
                             </div>
                             <ScrollAnimation>
-                                <div className="group relative bg-white p-7 rounded-2xl shadow-sm overflow-hidden transition-all duration-500 hover:-translate-y-1 hover:shadow-2xl">
-                                <div className="absolute inset-0 right-full bg-gradient-to-r from-green-400 to-green-200 transition-all duration-500 ease-in-out group-hover:right-0"></div>
+                                <div className="group relative bg-card p-7 rounded-2xl shadow-sm overflow-hidden transition-all duration-500 hover:-translate-y-1 hover:shadow-2xl">
+                                <div className="absolute inset-0 right-full bg-gradient-to-r from-secondary to-primary/60 transition-all duration-500 ease-in-out group-hover:right-0"></div>
                                 <div className="relative z-10">
                                     <div className="flex gap-4 items-start">
-                                        <div className="bg-green-50 rounded-xl p-3 flex-shrink-0 text-green-900 transition-colors duration-500"><Icon name="phone" size={22} /></div>
+                                        <div className="bg-secondary/20 rounded-xl p-3 flex-shrink-0 text-primary transition-colors duration-500 group-hover:text-primary-foreground"><Icon name="phone" size={22} /></div>
                                         <div>
-                                            <h3 className="font-['DM_Sans'] text-base text-green-900 font-semibold mb-1.5 transition-colors duration-500">Phone & WhatsApp</h3>
-                                            <a href={CALL_LINK} className="font-['DM_Sans'] text-lg text-green-900 font-bold no-underline transition-colors duration-500">079056 51137</a>
+                                            <h3 className="font-['DM_Sans'] text-base text-primary font-semibold mb-1.5 transition-colors duration-500 group-hover:text-primary-foreground">Phone & WhatsApp</h3>
+                                            <a href={CALL_LINK} className="font-['DM_Sans'] text-lg text-primary font-bold no-underline transition-colors duration-500 group-hover:text-primary-foreground">079056 51137</a>
                                             <div className="mt-2.5">
-                                                <a href={WHATSAPP_LINK} target="_blank" rel="noopener noreferrer" className="bg-green-500 text-white px-4 py-2 rounded-lg font-['DM_Sans'] font-semibold text-xs no-underline inline-flex items-center gap-1.5 transition-colors duration-500"
+                                                <a href={WHATSAPP_LINK} target="_blank" rel="noopener noreferrer" className="bg-secondary text-secondary-foreground px-4 py-2 rounded-lg font-['DM_Sans'] font-semibold text-xs no-underline inline-flex items-center gap-1.5 transition-colors duration-500"
                                                 >
                                                     <Icon name="whatsapp" size={16} /> Chat on WhatsApp
                                                 </a>
@@ -66,19 +62,19 @@ export default function Contact() {
                                     </div>
                                 </div>
                             </div>
-                            </ScrollAnimation>    
+                            </ScrollAnimation>
                             <ScrollAnimation>
-                                <div className="group relative bg-white p-7 rounded-2xl shadow-sm overflow-hidden transition-all duration-500 hover:-translate-y-1 hover:shadow-2xl">
-                                <div className="absolute inset-0 top-full bg-gradient-to-b from-green-400 to-green-200 transition-all duration-500 ease-in-out group-hover:top-0"></div>
+                                <div className="group relative bg-card p-7 rounded-2xl shadow-sm overflow-hidden transition-all duration-500 hover:-translate-y-1 hover:shadow-2xl">
+                                <div className="absolute inset-0 top-full bg-gradient-to-b from-secondary to-primary/60 transition-all duration-500 ease-in-out group-hover:top-0"></div>
                                 <div className="relative z-10">
                                     <div className="flex gap-4 items-start">
-                                        <div className="bg-green-50 rounded-xl p-3 flex-shrink-0 text-green-900 transition-colors duration-500"><Icon name="clock" size={22} /></div>
+                                        <div className="bg-secondary/20 rounded-xl p-3 flex-shrink-0 text-primary transition-colors duration-500 group-hover:text-primary-foreground"><Icon name="clock" size={22} /></div>
                                         <div className="w-full">
-                                            <h3 className="font-['DM_Sans'] text-base text-green-900 font-semibold mb-3 transition-colors duration-500">Working Hours</h3>
+                                            <h3 className="font-['DM_Sans'] text-base text-primary font-semibold mb-3 transition-colors duration-500 group-hover:text-primary-foreground">Working Hours</h3>
                                             {HOURS.map((h, i) => (
-                                                <div key={i} className="flex justify-between py-2 border-b border-gray-100 last:border-b-0">
-                                                    <span className="font-['DM_Sans'] text-sm text-gray-600 transition-colors duration-500">{h.day}</span>
-                                                    <span className="font-['DM_Sans'] text-sm text-green-900 font-semibold transition-colors duration-500">{h.time}</span>
+                                                <div key={i} className="flex justify-between py-2 border-b border-border last:border-b-0">
+                                                    <span className="font-['DM_Sans'] text-sm text-muted-foreground transition-colors duration-500 group-hover:text-primary-foreground/90">{h.day}</span>
+                                                    <span className="font-['DM_Sans'] text-sm text-primary font-semibold transition-colors duration-500 group-hover:text-primary-foreground">{h.time}</span>
                                                 </div>
                                             ))}
                                         </div>
