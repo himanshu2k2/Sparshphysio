@@ -43,14 +43,15 @@ export function Footer() {
           <div>
             <h4 className="font-['DM_Sans'] text-sm text-secondary font-semibold mb-4 tracking-wide">CONTACT</h4>
             <p className="font-['DM_Sans'] text-sm text-primary-foreground/60 leading-relaxed mb-2">{ADDRESS}</p>
-            <a href={CALL_LINK} className="font-['DM_Sans'] text-sm text-primary-foreground no-underline block mb-1">📞 079056 51137</a>
+            <a href={CALL_LINK} className="font-['DM_Sans'] text-sm text-primary-foreground no-underline block mb-1">📞 79056 51137</a>
+            <a href={CALL_LINK} className="font-['DM_Sans'] text-sm text-primary-foreground no-underline block mb-1">📞 90445 32990</a>
             <a href={WHATSAPP_LINK} target="_blank" rel="noopener noreferrer" className="font-['DM_Sans'] text-sm text-secondary no-underline block">💬 WhatsApp Us</a>
           </div>
 
           <div>
             <h4 className="font-['DM_Sans'] text-sm text-secondary font-semibold mb-4 tracking-wide">HOURS</h4>
             <p className="font-['DM_Sans'] text-sm text-primary-foreground/60 leading-[1.8]">
-              Mon – Sat: 9 AM – 8 PM<br />Sunday: 10 AM – 2 PM
+              <u>Mon – Sat:</u><br /> Morning: 9:00 AM - 12:00 PM<br /> Evening: 4:30 PM - 8:30 PM<br /><u>Sunday:</u> Closed
             </p>
             <a href={MAPS_LINK} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-1.5 mt-3 text-secondary font-['DM_Sans'] text-sm font-semibold no-underline">
               <Icon name="mapPin" size={14} /> Get Directions
@@ -65,9 +66,9 @@ export function Footer() {
         </div>
       </div>
 
-      <a href={WHATSAPP_LINK} target="_blank" rel="noopener noreferrer" className="fixed bottom-6 right-6 z-[999] w-15 h-15 rounded-full bg-secondary flex items-center justify-center shadow-lg cursor-pointer transition-transform duration-200 text-secondary-foreground hover:scale-110"
+      <a href={WHATSAPP_LINK} target="_blank" rel="noopener noreferrer" className="fixed bottom-6 right-6 z-[999] w-25 h-25 rounded-full  flex items-center justify-center shadow-lg cursor-pointer transition-transform duration-200 text-secondary-foreground hover:scale-110"
       >
-        <Icon name="whatsapp" size={30} />
+        <Icon name="whatsapp" size={40} />
       </a>
     </footer>
   );

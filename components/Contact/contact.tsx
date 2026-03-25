@@ -51,12 +51,16 @@ export default function Contact() {
                                         <div className="bg-secondary/20 rounded-xl p-3 flex-shrink-0 text-primary transition-colors duration-500 group-hover:text-primary-foreground"><Icon name="phone" size={22} /></div>
                                         <div>
                                             <h3 className="font-['DM_Sans'] text-base text-primary font-semibold mb-1.5 transition-colors duration-500 group-hover:text-primary-foreground">Phone & WhatsApp</h3>
-                                            <a href={CALL_LINK} className="font-['DM_Sans'] text-lg text-primary font-bold no-underline transition-colors duration-500 group-hover:text-primary-foreground">079056 51137</a>
-                                            <div className="mt-2.5">
+                                            <div className="flex items-center gap-4">
+                                                <a href={CALL_LINK} className="font-['DM_Sans'] text-lg text-primary font-bold no-underline transition-colors duration-500 group-hover:text-primary-foreground">079056 51137</a>
                                                 <a href={WHATSAPP_LINK} target="_blank" rel="noopener noreferrer" className="bg-secondary text-secondary-foreground px-4 py-2 rounded-lg font-['DM_Sans'] font-semibold text-xs no-underline inline-flex items-center gap-1.5 transition-colors duration-500"
                                                 >
                                                     <Icon name="whatsapp" size={16} /> Chat on WhatsApp
                                                 </a>
+                                            </div>
+                                            <div className="flex items-center gap-4 mt-2.5">
+                                                <a href={CALL_LINK} className="font-['DM_Sans'] text-lg text-primary font-bold no-underline transition-colors duration-500 group-hover:text-primary-foreground">090445 32990</a>
+                                                
                                             </div>
                                         </div>
                                     </div>
@@ -74,7 +78,15 @@ export default function Contact() {
                                             {HOURS.map((h, i) => (
                                                 <div key={i} className="flex justify-between py-2 border-b border-border last:border-b-0">
                                                     <span className="font-['DM_Sans'] text-sm text-muted-foreground transition-colors duration-500 group-hover:text-primary-foreground/90">{h.day}</span>
-                                                    <span className="font-['DM_Sans'] text-sm text-primary font-semibold transition-colors duration-500 group-hover:text-primary-foreground">{h.time}</span>
+                                                    <div className="text-right">
+                                                        <span className="font-['DM_Sans'] text-sm text-primary font-semibold transition-colors duration-500 group-hover:text-primary-foreground">{h.morning}</span>
+                                                        {h.evening && h.evening !== "Closed" && (
+                                                            <>
+                                                                <br />
+                                                                <span className="font-['DM_Sans'] text-sm text-primary font-semibold transition-colors duration-500 group-hover:text-primary-foreground">{h.evening}</span>
+                                                            </>
+                                                        )}
+                                                    </div>
                                                 </div>
                                             ))}
                                         </div>

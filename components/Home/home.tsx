@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { WHATSAPP_LINK, CALL_LINK, SERVICES, REVIEWS } from "@/lib/constants";
+import { CALL_LINK, SERVICES, REVIEWS } from "@/lib/constants";
 import { Icon } from "@/components/shared/Icon";
 import { ImageCarousel } from "@/components/shared/ImageCarousel";
 import { ScrollAnimation } from "@/components/shared/ScrollAnimation";
@@ -31,7 +31,7 @@ export default function HomePage() {
             <ScrollAnimation animation="fade-in-down" delay={200}>
               <div className="flex gap-4 items-center mb-6 flex-wrap">
                 <span className="bg-secondary/20 text-secondary px-4 py-1.5 rounded-full text-sm font-semibold tracking-wide font-['DM_Sans'] backdrop-blur-sm">
-                  ⭐ 4.9 RATED · 139 GOOGLE REVIEWS
+                  ⭐ 4.9 RATED · 160 GOOGLE REVIEWS
                 </span>
                 <span className="bg-white/10 text-white px-4 py-1.5 rounded-full text-sm font-medium font-['DM_Sans'] backdrop-blur-sm">
                   17+ YEARS IN KANPUR
@@ -77,7 +77,7 @@ export default function HomePage() {
           animation="fade-in-up"
           className="max-w-[1200px] mx-auto flex justify-center gap-10 flex-wrap items-center"
         >
-          {["✅ Verified on Google", "🏆 5.0 on JustDial (97 ratings)", "🏠 Home Visits Available", "₹100 Consultation"].map((t, i) => (
+          {["✅ Verified on Google", "🏆 5.0 on JustDial (97 ratings)", "🏠 Home Visits Available", "₹250 Consultation"].map((t, i) => (
             <span key={i} className="font-['DM_Sans'] text-sm text-gray-600 font-medium">{t}</span>
           ))}
         </StaggerAnimation>
@@ -125,17 +125,19 @@ export default function HomePage() {
           <StaggerAnimation
             staggerDelay={150}
             animation="scale-up"
-            className="grid grid-cols-[repeat(auto-fill,minmax(260px,1fr))] gap-6"
+            className="grid grid-cols-3 gap-6"
           >
             {[
               { icon: "shield", title: "17+ Years Experience", desc: "One of Kanpur's longest-serving physiotherapy clinics with proven results." },
               { icon: "heart", title: "Patient-First Care", desc: "Every treatment plan is personalized to your condition, lifestyle, and recovery goals." },
+              { icon: "equipment", title: "Advanced Equipments", desc: "Advanced equipment like laser, shockwave, SWD, MWD, gait trainer, etc..." },
+              { icon: "treatment", title: "Modern Treatment", desc: "Treatments including cupping, dry needling, IASTM, chiropractic, taping, etc..." },
+              { icon: "users", title: "Home Visit Service", desc: "Trained professionals and quality physiotherapy at your doorstep in whole kanpur." },
               { icon: "award", title: "4.9 Star Rating", desc: "139 Google reviews and 97 JustDial ratings — consistently top-rated in Kanpur." },
-              { icon: "users", title: "Home Visit Service", desc: "Professional physiotherapy at your doorstep in Kidwai Nagar, Barra, Juhi & beyond." },
             ].map((item, i) => (
-              <div key={i} className="group relative bg-card p-8 rounded-2xl shadow-sm overflow-hidden transition-all duration-500 hover:-translate-y-2 hover:shadow-2xl cursor-pointer">
+              <div key={i} className={`group relative bg-card p-8 rounded-2xl shadow-sm overflow-hidden transition-all duration-500 hover:-translate-y-2 hover:shadow-2xl cursor-pointer ${i >= 4 ? 'col-start-2' : ''}`}>
                 <div className="absolute inset-0 right-full bg-gradient-to-l from-secondary to-primary/60 transition-all duration-500 ease-in-out group-hover:right-0"></div>
-                <div className="relative z-10">
+                <div className="relative z-10 flexitems-center">
                   <div className="text-primary mb-4 transition-all duration-500 group-hover:scale-110 group-hover:text-primary-foreground"><Icon name={item.icon as any} size={28} /></div>
                   <h3 className="font-['DM_Sans'] text-base text-primary font-semibold mb-2 transition-colors duration-500 group-hover:text-primary-foreground">{item.title}</h3>
                   <p className="font-['DM_Sans'] text-sm text-muted-foreground leading-relaxed transition-colors duration-500 group-hover:text-primary-foreground/90">{item.desc}</p>

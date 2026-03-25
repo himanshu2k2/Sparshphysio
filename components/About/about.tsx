@@ -25,10 +25,10 @@ export default function AboutComponent() {
                 Our clinic offers a wide range of treatments — from chronic pain management and post-surgery rehabilitation to neuro physiotherapy and sports injury recovery. What sets us apart is our commitment to evidence-based treatment protocols combined with genuine, compassionate care.
               </p>
               <p className="mb-5">
-                Understanding that recovery shouldn&apos;t wait, we also provide home visit physiotherapy services across Kidwai Nagar, Barra, Juhi, and surrounding areas — ensuring professional care reaches you wherever you are.
+                Understanding that recovery shouldn&apos;t wait, we also provide home visit physiotherapy services by quality trained professionals across whole Kanpur — ensuring professional care reaches you wherever you are.
               </p>
               <p>
-                With a 4.9-star rating on Google (139 reviews) and a perfect 5.0 on JustDial (97 ratings), our results speak for themselves. At Sparsh, your recovery is our mission.
+                With a 4.9-star rating on Google (160 reviews) and a perfect 5.0 on JustDial (97 ratings), our results speak for themselves. At Sparsh, your recovery is our mission.
               </p>
             </div>
           </div>
@@ -41,7 +41,7 @@ export default function AboutComponent() {
               { num: "17+", label: "Years of Service" },
               { num: "15,000+", label: "Patients Treated" },
               { num: "4.9 ", label: "Google Rating" },
-              { num: "₹100", label: "Consultation Fee" },
+              { num: "₹250", label: "Consultation Fee" },
             ].map((s, i) => (
               <div key={i} className="bg-card p-7 rounded-2xl text-center shadow-sm">
                 <div className="font-['Playfair_Display'] text-[30px] text-primary font-bold">{s.num}</div>

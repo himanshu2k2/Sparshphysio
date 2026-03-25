@@ -19,7 +19,7 @@ export default function ReviewsComponent() {
               <div className="flex gap-0.5 justify-center mx-1">
                 {[...Array(5)].map((_, i) => <span key={i} className="text-amber-500"><Icon name="star" size={16} /></span>)}
               </div>
-              <div className="font-['DM_Sans'] text-xs text-white/60 mt-1">139 Google Reviews</div>
+              <div className="font-['DM_Sans'] text-xs text-white/60 mt-1">160 Google Reviews</div>
             </div>
             <div className="text-center">
               <div className="font-['Playfair_Display'] text-[42px] text-secondary font-bold">5.0</div>

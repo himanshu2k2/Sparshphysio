@@ -1,4 +1,4 @@
-export const PHONE = "918957319386";
+export const PHONE = "917905651137";
 export const ADDRESS = "65-H, near MAMA PCO, Mangala Vihar-1, Shyam Nagar, Kanpur, Uttar Pradesh 208015";
 export const MAPS_LINK = "https://www.google.com/maps/place/Sparsh+Physiotherapy+Clinic/@26.4142134,80.3125707,14z";
 export const WHATSAPP_LINK = `https://wa.me/${PHONE}?text=Hi%20Sparsh%20Clinic%2C%20I%20would%20like%20to%20book%20an%20appointment.`;
@@ -26,13 +26,13 @@ export const REVIEWS = [
 ];
 
 export const HOURS = [
-  { day: "Monday", time: "9:00 AM – 8:00 PM" },
-  { day: "Tuesday", time: "9:00 AM – 8:00 PM" },
-  { day: "Wednesday", time: "9:00 AM – 8:00 PM" },
-  { day: "Thursday", time: "9:00 AM – 8:00 PM" },
-  { day: "Friday", time: "9:00 AM – 8:00 PM" },
-  { day: "Saturday", time: "9:00 AM – 8:00 PM" },
-  { day: "Sunday", time: "10:00 AM – 2:00 PM" },
+  { day: "Monday", morning: "9:00 AM – 12:00 PM", evening: "4:30 PM – 8:30 PM" },
+  { day: "Tuesday", morning: "9:00 AM – 12:00 PM", evening: "4:30 PM – 8:30 PM" },
+  { day: "Wednesday", morning: "9:00 AM – 12:00 PM", evening: "4:30 PM – 8:30 PM" },
+  { day: "Thursday", morning: "9:00 AM – 12:00 PM", evening: "4:30 PM – 8:30 PM" },
+  { day: "Friday", morning: "9:00 AM – 12:00 PM", evening: "4:30 PM – 8:30 PM" },
+  { day: "Saturday", morning: "9:00 AM – 12:00 PM", evening: "4:30 PM – 8:30 PM" },
+  { day: "Sunday", morning: "Closed", evening: "Closed" },
 ];
 
 export const FAQS = [
