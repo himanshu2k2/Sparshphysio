@@ -7,6 +7,7 @@ interface ImageCarouselProps {
   className?: string;
   overlayOpacity?: string;
   kenBurns?: boolean;
+  images?: string[];
 }
 
 export function ImageCarousel({

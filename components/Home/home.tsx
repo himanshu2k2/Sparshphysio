@@ -8,6 +8,7 @@ import { ScrollAnimation } from "@/components/shared/ScrollAnimation";
 import { StaggerAnimation } from "@/components/shared/StaggerAnimation";
 import { PageTransition } from "@/components/shared/PageTransition";
 import ServiceTile from "@/components/shared/ServiceTile";
+import Hero from "./hero";
 import { ViewAllServicesButton } from "./servicetile";
 import AppointmentSection from "./appointment";
 
@@ -82,6 +83,14 @@ export default function HomePage() {
           ))}
         </StaggerAnimation>
       </section>
+
+      <section className="bg-white py-20 px-6 overflow-hidden">
+        <ScrollAnimation animation="fade-in-up" delay={0} className="max-w-[1200px] mx-auto flex flex-col gap-4 justify-center items-center">
+          <h2 className="font-['Playfair_Display'] text-[clamp(28px,4vw,42px)] text-primary">Who we are</h2>
+        </ScrollAnimation>
+      </section>
+      
+      <Hero />
       
       <section className="bg-white py-20 px-6 overflow-hidden">
         <div className="max-w-[1200px] mx-auto">
