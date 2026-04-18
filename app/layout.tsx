@@ -18,6 +18,7 @@ const dmSans = DM_Sans({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || 'http://localhost:8080'),
   title: 'Sparsh Physiotherapy Clinic - Best Physiotherapy in Kanpur',
   description: 'Kanpur\'s trusted physiotherapy clinic with 17+ years of experience. Science-backed treatment for pain relief, post-surgery recovery, and complete rehabilitation.',
   openGraph: {
