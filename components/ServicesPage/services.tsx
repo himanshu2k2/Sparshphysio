@@ -12,56 +12,56 @@ export default function ServicesComponent() {
       id: 1,
       title: "Neuro Physiotherapy",
       desc: "Specialized rehabilitation for stroke, paralysis, nerve injuries, and neurological conditions. Restoring movement and independence.",
-      price: "₹300/session",
+      price: "₹350/session",
       icon: "/Neuro.png"
     },
     {
       id: 2,
       title: "Orthopedic Rehab",
       desc: "Treatment for fractures, joint replacements, arthritis, and musculoskeletal disorders with hands-on manual therapy.",
-      price: "₹250/session",
+      price: "₹300/session",
       icon: "/orthopedicRehab.png"
     },
     {
       id: 3,
       title: "Sports Injury Recovery",
       desc: "Get back in the game. Targeted therapy for ligament tears, sprains, muscle strains, and sports-related injuries.",
-      price: "₹300/session",
+      price: "₹350/session",
       icon: "/Sports.png"
     },
     {
       id: 4,
       title: "PIVD / Disc Treatment",
       desc: "Specialised non-surgical treatment for slipped disc, sciatica, and prolapsed intervertebral disc conditions.",
-      price: "₹300/session",
+      price: "₹350/session",
       icon: "/disc.webp"
     },
     {
       id: 5,
       title: "Post-Surgery Rehab",
       desc: "Faster recovery after knee replacement, hip surgery, spinal surgery, and other surgical procedures.",
-      price: "₹300/session",
+      price: "₹350/session",
       icon: "/post.png"
     },
     {
       id: 6,
       title: "Chronic Pain Management",
       desc: "Long-term relief from persistent back pain, neck pain, frozen shoulder, and chronic pain conditions.",
-      price: "₹250/session",
+      price: "₹300/session",
       icon: "/chronic.png"
     },
     {
       id: 7,
       title: "Hand Therapy",
       desc: "Specialized rehabilitation for hand and wrist injuries, carpal tunnel syndrome, and post-fracture recovery.",
-      price: "₹250/session",
+      price: "₹300/session",
       icon: "/hand.png"
     },
     {
       id: 8,
       title: "Geriatric Physiotherapy",
       desc: "Specialized branch of physical therapy focused on improving mobility, strength, balance, and independence in older adults.",
-      price: "₹250/session",
+      price: "₹300/session",
       icon: "/Geriatric-Physiotherapy.jpg"
     },
     {

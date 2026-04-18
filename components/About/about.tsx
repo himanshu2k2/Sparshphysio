@@ -131,7 +131,6 @@ export default function AboutComponent() {
                   </div>
                   <div>
                     <h4 className="font-['DM_Sans'] text-base text-primary font-semibold">Educational Qualifications</h4>
-                    <p className="font-['DM_Sans'] text-sm text-muted-foreground">DPT (Doctor of Physiotherapy)</p>
                     <p className="font-['DM_Sans'] text-sm text-muted-foreground">BPT (Bachelor of Physiotherapy)</p>
                     <p className="font-['DM_Sans'] text-sm text-muted-foreground">MPT (Master of Physiotherapy)</p>
                   </div>

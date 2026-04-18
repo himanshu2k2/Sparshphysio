@@ -2,7 +2,6 @@
 import { SERVICES } from "@/lib/constants";
 import { ImageCarousel } from "../shared/ImageCarousel";
 import { ScrollAnimation } from "../shared/ScrollAnimation";
-import { Icon } from "../shared/Icon";
 
 export default function PricingComponent() {
 

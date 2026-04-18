@@ -5,14 +5,14 @@ export const WHATSAPP_LINK = `https://wa.me/${PHONE}?text=Hi%20Sparsh%20Clinic%2
 export const CALL_LINK = `tel:+${PHONE}`;
 
 export const SERVICES = [
-  { id: "neuro", icon: "🧠", title: "Neuro Physiotherapy", desc: "Specialized rehabilitation for stroke, paralysis, nerve injuries, and neurological conditions. Restoring movement and independence.", price: "₹300/session" },
-  { id: "ortho", icon: "🦴", title: "Orthopedic Rehab", desc: "Treatment for fractures, joint replacements, arthritis, and musculoskeletal disorders with hands-on manual therapy.", price: "₹250/session" },
-  { id: "sports", icon: "⚡", title: "Sports Injury Recovery", desc: "Get back in the game. Targeted therapy for ligament tears, sprains, muscle strains, and sports-related injuries.", price: "₹300/session" },
-  { id: "pivd", icon: "🔬", title: "PIVD / Disc Treatment", desc: "Non-surgical treatment for slipped disc, sciatica, and prolapsed intervertebral disc conditions.", price: "₹300/session" },
-  { id: "post-surgery", icon: "🏥", title: "Post-Surgery Rehab", desc: "Faster recovery after knee replacement, hip surgery, spinal surgery, and other surgical procedures.", price: "₹300/session" },
-  { id: "chronic", icon: "💆", title: "Chronic Pain Management", desc: "Long-term relief from persistent back pain, neck pain, frozen shoulder, and chronic pain conditions.", price: "₹250/session" },
-  { id: "hand", icon: "✋", title: "Hand Therapy", desc: "Specialized rehabilitation for hand and wrist injuries, carpal tunnel syndrome, and post-fracture recovery.", price: "₹250/session" },
-  { id: "geriatric", icon: "🧓", title: "Geriatric Physiotherapy", desc: "Gentle, effective therapy for elderly patients — improving mobility, balance, and quality of life.", price: "₹250/session" },
+  { id: "neuro", icon: "🧠", title: "Neuro Physiotherapy", desc: "Specialized rehabilitation for stroke, paralysis, nerve injuries, and neurological conditions. Restoring movement and independence.", price: "₹350/session" },
+  { id: "ortho", icon: "🦴", title: "Orthopedic Rehab", desc: "Treatment for fractures, joint replacements, arthritis, and musculoskeletal disorders with hands-on manual therapy.", price: "₹300/session" },
+  { id: "sports", icon: "⚡", title: "Sports Injury Recovery", desc: "Get back in the game. Targeted therapy for ligament tears, sprains, muscle strains, and sports-related injuries.", price: "₹350/session" },
+  { id: "pivd", icon: "🔬", title: "PIVD / Disc Treatment", desc: "Non-surgical treatment for slipped disc, sciatica, and prolapsed intervertebral disc conditions.", price: "₹350/session" },
+  { id: "post-surgery", icon: "🏥", title: "Post-Surgery Rehab", desc: "Faster recovery after knee replacement, hip surgery, spinal surgery, and other surgical procedures.", price: "₹350/session" },
+  { id: "chronic", icon: "💆", title: "Chronic Pain Management", desc: "Long-term relief from persistent back pain, neck pain, frozen shoulder, and chronic pain conditions.", price: "₹300/session" },
+  { id: "hand", icon: "✋", title: "Hand Therapy", desc: "Specialized rehabilitation for hand and wrist injuries, carpal tunnel syndrome, and post-fracture recovery.", price: "₹300/session" },
+  { id: "geriatric", icon: "🧓", title: "Geriatric Physiotherapy", desc: "Gentle, effective therapy for elderly patients — improving mobility, balance, and quality of life.", price: "₹300/session" },
   { id: "home", icon: "🏠", title: "Home Visit Physiotherapy", desc: "Can't visit the clinic? We come to you. Professional physiotherapy at your doorstep in Kidwai Nagar, Barra & Juhi.", price: "₹500/visit" },
 ];
 
