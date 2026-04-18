@@ -62,7 +62,7 @@ export default function ServicesComponent() {
       title: "Geriatric Physiotherapy",
       desc: "Specialized branch of physical therapy focused on improving mobility, strength, balance, and independence in older adults.",
       price: "₹300/session",
-      icon: "/Geriatric-Physiotherapy.jpg"
+      icon: "/Geriatric.jpg"
     },
     {
       id: 9,
