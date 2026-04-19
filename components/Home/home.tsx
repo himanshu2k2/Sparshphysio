@@ -134,7 +134,7 @@ export default function HomePage() {
           <StaggerAnimation
             staggerDelay={150}
             animation="scale-up"
-            className="grid grid-cols-3 gap-6"
+            className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"
           >
             {[
               { icon: "shield", title: "17+ Years Experience", desc: "One of Kanpur's longest-serving physiotherapy clinics with proven results." },
