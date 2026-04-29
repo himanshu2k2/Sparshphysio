@@ -22,15 +22,6 @@ export function PaymentModal({ open, onOpenChange }: PaymentModalProps) {
   const [showSuccess, setShowSuccess] = useState(false);
   const [showQRCode, setShowQRCode] = useState(false);
   const [upiLink, setUpiLink] = useState("");
-  const [isMobile, setIsMobile] = useState(false);
-
-  useEffect(() => {
-    const checkMobile = () => {
-      const mobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
-      setIsMobile(mobile);
-    };
-    checkMobile();
-  }, []);
 
   useEffect(() => {
     if (!isProcessing) return;
@@ -58,13 +49,8 @@ export function PaymentModal({ open, onOpenChange }: PaymentModalProps) {
     const generatedUpiLink = `upi://pay?pa=${UPI_ID}&pn=${encodeURIComponent(MERCHANT_NAME)}&am=${amount}&cu=INR&tn=WebsitePayment`;
     setUpiLink(generatedUpiLink);
 
-    if (isMobile) {
-      window.location.href = generatedUpiLink;
-      setIsProcessing(true);
-    } else {
-      setShowQRCode(true);
-      setIsProcessing(true);
-    }
+    setShowQRCode(true);
+    setIsProcessing(true);
   };
 
   const handlePaymentSuccess = () => {
@@ -227,11 +213,7 @@ export function PaymentModal({ open, onOpenChange }: PaymentModalProps) {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
                 </svg>
                 <div className="text-sm text-muted-foreground">
-                  {isMobile ? (
-                    <p>You will be redirected to your UPI app to complete the payment</p>
-                  ) : (
-                    <p>A QR code will be displayed for you to scan using your mobile UPI app</p>
-                  )}
+                  <p>A QR code will be displayed for you to scan using your UPI app</p>
                 </div>
               </div>
             </div>
