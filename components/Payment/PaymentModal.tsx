@@ -7,7 +7,7 @@ import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { QRCodeSVG } from "qrcode.react";
 
-const UPI_ID = "8960774714@axl";
+const UPI_ID = "q14352180@ybl";
 const MERCHANT_NAME = "Sparsh Physiotherapy";
 
 interface PaymentModalProps {
