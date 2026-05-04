@@ -46,8 +46,7 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <head>
-      <script src="https://webswami-backend-backend.up.railway.app/widget.js" data-bot-id="f9c3294a-595e-4085-ab5b-a748261a37c4"></script>
-      <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+ <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
       </head>
       <body className={`${playfair.variable} ${dmSans.variable} font-['DM_Sans']`}>
   <ThemeProvider
@@ -58,7 +57,8 @@ export default function RootLayout({
         >
           <Navbar />
           <main className="pt-[70px]">
-            {children}
+          <script src="https://webswami-backend-backend.up.railway.app/widget.js" data-bot-id="f9c3294a-595e-4085-ab5b-a748261a37c4"></script>
+          {children}
           </main>
           <Footer />
         </ThemeProvider>
