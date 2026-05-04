@@ -46,11 +46,11 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <head>
-        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+      <script src="https://webswami-backend-backend.up.railway.app/widget.js" data-bot-id="f9c3294a-595e-4085-ab5b-a748261a37c4"></script>
+      <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
       </head>
       <body className={`${playfair.variable} ${dmSans.variable} font-['DM_Sans']`}>
-        <script src="https://webswami-backend-backend.up.railway.app/widget.js" data-bot-id="f9c3294a-595e-4085-ab5b-a748261a37c4"></script>
-        <ThemeProvider
+  <ThemeProvider
           attribute="class"
           defaultTheme="light"
           enableSystem
