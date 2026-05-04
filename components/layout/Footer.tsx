@@ -66,7 +66,7 @@ export function Footer() {
         </div>
       </div>
 
-      <a href={WHATSAPP_LINK} target="_blank" rel="noopener noreferrer" className="fixed bottom-6 right-6 z-[999] w-25 h-25 rounded-full  flex items-center justify-center shadow-lg cursor-pointer transition-transform duration-200 text-secondary-foreground hover:scale-110"
+      <a href={WHATSAPP_LINK} target="_blank" rel="noopener noreferrer" className="fixed bottom-6 left-6 z-[999] w-25 h-25 rounded-full  flex items-center justify-center shadow-lg cursor-pointer transition-transform duration-200 text-secondary-foreground hover:scale-110"
       >
         <Icon name="whatsapp" size={40} />
       </a>
