@@ -1,6 +1,6 @@
 "use client";
 
-import { WHATSAPP_LINK, CALL_LINK } from "@/lib/constants";
+import { CALL_LINK } from "@/lib/constants";
 import { Icon } from "@/components/shared/Icon";
 import { ScrollAnimation } from "@/components/shared/ScrollAnimation";
 import Link from "next/link";
@@ -14,7 +14,7 @@ export default function AppointmentSection() {
           Book an Appointment
         </h2>
         <p className="font-['DM_Sans'] text-base text-white/70 leading-relaxed mb-9">
-          Book your consultation today. First assessment at just ₹100.
+          Book your consultation today. First assessment at just ₹250.
         </p>
         <div className="flex gap-4 justify-center flex-wrap">
           <Link href="/booking" className="border border-white/20 hover:bg-secondary text-white px-9 py-4 rounded-xl font-['DM_Sans'] font-semibold text-base inline-flex items-center gap-2.5 no-underline cursor-pointer"

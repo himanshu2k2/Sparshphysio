@@ -4,6 +4,7 @@ import { Playfair_Display, DM_Sans } from 'next/font/google';
 import { Navbar } from '@/components/layout/Navbar';
 import { Footer } from '@/components/layout/Footer';
 import { ThemeProvider } from '@/components/theme/ThemeProvider';
+import { PageTransition } from '@/components/shared/PageTransition';
 
 const playfair = Playfair_Display({
   subsets: ['latin'],
@@ -21,6 +22,11 @@ export const metadata: Metadata = {
   metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || 'http://localhost:8080'),
   title: 'Sparsh Physiotherapy Clinic - Best Physiotherapy in Kanpur',
   description: 'Kanpur\'s trusted physiotherapy clinic with 17+ years of experience. Science-backed treatment for pain relief, post-surgery recovery, and complete rehabilitation.',
+  icons: {
+    icon: '/Simage.png',
+    shortcut: '/Simage.png',
+    apple: '/Simage.png',
+  },
   openGraph: {
     images: [
       {
@@ -48,20 +54,22 @@ export default function RootLayout({
       <head>
  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
       </head>
-      <body className={`${playfair.variable} ${dmSans.variable} font-['DM_Sans']`}>
+      <body className={`${playfair.variable} ${dmSans.variable} font-['DM_Sans']}`}>
   <ThemeProvider
-          attribute="class"
-          defaultTheme="light"
-          enableSystem
-          disableTransitionOnChange={false}
-        >
+        attribute="class"
+        defaultTheme="light"
+        enableSystem
+        disableTransitionOnChange={false}
+      >
+        <PageTransition>
           <Navbar />
           <main className="pt-[70px]">
           <script src="https://webswami-backend-backend.up.railway.app/widget.js" data-bot-id="f9c3294a-595e-4085-ab5b-a748261a37c4"></script>
           {children}
           </main>
           <Footer />
-        </ThemeProvider>
+        </PageTransition>
+      </ThemeProvider>
       </body>
     </html>
   );
